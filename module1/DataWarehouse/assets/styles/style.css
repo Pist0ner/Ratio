@@ -139,10 +139,38 @@ a:hover{
 .testimonials{
     background: #9C69E2;
     border-radius: 50px;
-    text-align: center;
     color: #FFFFFF;
-    padding: 90px;
+    margin: 150px 0;
+    padding: 60px 90px;
 }
 .testimonials h2{
-    padding: 100px;
+    padding: 50px 0;
+}
+.footer{
+    display: flex;
+    margin: 20px;
+    justify-content: space-between;
+}
+.footer-logo{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+#contacts{
+    width: 335px;
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+
+}
+.social-icon{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #212353;
+    opacity: 0.1;
+}
+.social-icons h4{
+    margin-bottom: 30px;
 }

@@ -7,6 +7,10 @@ h2{
     font-weight: 700;
     font-size: 40px;
 }
+h3{
+    font-weight: 400;
+    font-size: 24px;
+}
 p{
     font-size: 18px;
 }
@@ -27,14 +31,13 @@ p{
 .nav-item{
     padding-left: 40px;
 }
-.nav-item a{
+a{
     color: #4B5D68;
     text-decoration: none;
 }
-.nav-item a:hover{
+a:hover{
     color: #212353;
     font-weight: 500;
-;
 }
 .nav-link{
     text-decoration: none;
@@ -62,6 +65,7 @@ p{
     width: 380px;
 }
 .hero-button{
+    color: #FFF;
     display: block;
     width: 180px;
     height: 60px;
@@ -71,6 +75,9 @@ p{
     font-size: 18px;
     text-decoration: none;
     margin: 60px 0;
+}
+.hero-button:hover{
+    filter: invert(30%);
 }
 .promo{
     display: flex;
@@ -96,4 +103,46 @@ p{
 }
 .features-title p{
     padding: 50px;
+}
+.features-card-lists{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.features-card{
+    display: flex;
+    width: 530px;
+    background-image: url("../img/bg-card.svg");
+
+}
+.features-card img{
+    margin: auto;
+    width: 230px;
+}
+.feature-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.feature-card-wrapper p{
+    padding: 20px 0;
+}
+.features-card-link{
+    display: flex;
+}
+.arrow{
+    max-width: 30px;
+    padding-left: 10px;
+    height: 14px;
+}
+.testimonials{
+    background: #9C69E2;
+    border-radius: 50px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 90px;
+}
+.testimonials h2{
+    padding: 100px;
 }

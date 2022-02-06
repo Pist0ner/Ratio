@@ -18,6 +18,7 @@ p{
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
+    min-width: 380px;
 }
 .header{
     display: flex;
@@ -49,11 +50,14 @@ a:hover{
 }
 .hero{
     background-image: url("../img/hero.svg");
-    height: 742px;
+    min-height: 742px;
+    height: 100%;
     width: 100%;
     background-repeat: no-repeat;
-    background-size: 885px 468px;
-    background-position: right, bottom;
+    background-size: 85%;
+    background-position-x: right;
+    background-position-y: bottom;
+    margin-bottom: 50px;
 }
 .hero-title{
     font-weight: 700;
@@ -62,7 +66,7 @@ a:hover{
 
 }
 .hero-description{
-    width: 380px;
+    max-width: 380px;
 }
 .hero-button{
     color: #FFF;
@@ -81,23 +85,21 @@ a:hover{
 }
 .promo{
     display: flex;
-    width: 1120px;
-    height: 560px;
     border-radius: 50px;
     background: #F063B826;
+    padding: 20px;
 }
 .promo-img{
-    width: 470px;
+    object-fit: contain;
 }
 .promo-content{
     margin: auto;
-    width: 475px;
 }
 .promo-content-title{
     padding-bottom: 40px;
 }
 .features-title{
-    width: 700px;
+    max-width: 700px;
     text-align: center;
     margin: 150px auto 0;
 }
@@ -108,17 +110,17 @@ a:hover{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 10px;
 }
 .features-card{
     display: flex;
-    width: 530px;
+    max-width: 520px;
     background-image: url("../img/bg-card.svg");
 
 }
 .features-card img{
     margin: auto;
-    width: 230px;
+    max-width: 230px;
 }
 .feature-card-wrapper {
     display: flex;
@@ -173,4 +175,24 @@ a:hover{
 }
 .social-icons h4{
     margin-bottom: 30px;
+}
+@media (max-width: 680px) {
+    .hero-title{
+        font-size: 60px;
+    }
+    .features-card{
+        display: block;
+    }
+    .promo{
+        display: block;
+    }
+    .testimonials{
+        padding: 60px;
+    }
+    .footer-logo{
+        display: block;
+    }
+    .nav-list{
+        padding-left: 40px;
+    }
 }

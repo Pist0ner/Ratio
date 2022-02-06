@@ -11,7 +11,7 @@
     display: flex;
     position: relative;
     max-width: 1120px;
-    height: 500px;
+    min-height: 380px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -21,15 +21,16 @@
     top: 0;
     display: none;
     /*width: 70%;*/
-    width: 645px;
-    height: 300px;
+    width: inherit;
+    /*height: 300px;*/
+    /*min-width: 645%;*/
     background-color: #FFFFFF;
     color: #4B5D68;
     border-radius: 20px;
     transition: left 0.5s, transform 0.5s;
     will-change: transform;
     backface-visibility: hidden;
-    margin: 0 15%;
+    /*margin: 0 15%;*/
 }
 .carousel-item-wrapper{
     display: inline-flex;
@@ -43,7 +44,8 @@
 .carousel-arrow {
     display: none;
     position: absolute;
-    top: 85%;
+    /*top: 85%;*/
+    bottom: 0;
     z-index: 3;
     opacity: 0.7;
     color: #fff;
@@ -59,8 +61,17 @@ input:checked+div .carousel-item {left: -100%; transform: scale(0.4);}
 input:checked+div+input+div .carousel-item {left: 0; transform: scale(1);}
 input:checked+div+input+div+input+div .carousel-item {left: 100%; transform: scale(0.4);}
 
-input:checked+div .carousel-arrow {left: 90%;}
+input:checked+div .carousel-arrow {right: 40px;}
 input:checked+div+input+div+input+div .carousel-arrow {right: 0;}
 
 input:checked+div .carousel-arrow:before {content: '\27F5';}
 input:checked+div+input+div+input+div .carousel-arrow:before{content: '\27F6'; }
+
+@media (max-width: 680px) {
+    .carousel-item-wrapper{
+        display: block;
+    }
+    .carousel{
+        min-height: 600px;
+    }
+}

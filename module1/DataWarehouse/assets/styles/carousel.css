@@ -53,7 +53,7 @@
     padding: 10px;
     font-size: 28px;
 }
-
+/* это конечно хорошо, но слайдер делают через js :) */
 input:checked+div~div~div~div .carousel-item {background-image: none !important;}
 input:checked+div *, input:checked+div+input+div .carousel-item, input:checked+div+input+div+input+div * {display: block;}
 
